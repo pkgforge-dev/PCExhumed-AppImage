@@ -24,7 +24,7 @@ echo "Making nightly build of PCExhumed..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/NBlood/NBlood"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
-git clone --recursive --depth 1 "$REPO" ./PCExhumed
+git clone "$REPO" ./PCExhumed
 echo "$VERSION" > ~/version
 
 cd ./PCExhumed
