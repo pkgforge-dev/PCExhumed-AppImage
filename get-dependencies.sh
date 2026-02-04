@@ -29,7 +29,6 @@ echo "$VERSION" > ~/version
 
 cd ./PCExhumed
 make pcexhumed -j$(nproc)
-install -D -t /usr/bin pcexhumed
-install -D -t /usr/share/games/pcexhumed -m 644 pcexhumed.pk3
-install -D -t /usr/share/licenses/nblood -m 644 package/common/buildlic.txt
-install -Dm644 platform/Apple/bundles/PCExhumed.app/Contents/Resources/pcexhumed.icns /usr/share/pixmaps/pcexhumed.icns
+mv -v pcexhumed /usr/bin
+mv -v pcexhumed.pk3 /usr/share/games/pcexhumed
+cp -r platform/Apple/bundles/PCExhumed.app/Contents/Resources/pcexhumed.icns /usr/share/pixmaps/pcexhumed.icns
