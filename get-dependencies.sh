@@ -32,4 +32,3 @@ make pcexhumed -j$(nproc)
 mv -v pcexhumed /usr/bin
 mkdir -p /usr/share/games/pcexhumed
 mv -v pcexhumed.pk3 /usr/share/games/pcexhumed
-cp -r platform/Apple/bundles/PCExhumed.app/Contents/Resources/pcexhumed.icns /usr/share/pixmaps/pcexhumed.icns
