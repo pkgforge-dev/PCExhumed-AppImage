@@ -17,7 +17,7 @@
 
 </div>
 
-## ⚠️ Game assets go inside `~/.config/pcexhumed` ⚠️
+## ⚠️ Game assets within `~/.config/pcexhumed` ⚠️
 ## ⚠️ To use soundfonts copy *.sf2 to same folder or `ln -s /usr/share/soundfonts/sfname.sf2 ~/.config/pcexhumed/sfname.sf2` ⚠️
 
 ---
