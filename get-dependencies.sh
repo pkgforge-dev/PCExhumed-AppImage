@@ -22,8 +22,7 @@ VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
 git clone "$REPO" ./PCExhumed
 echo "$VERSION" > ~/version
 
+mkdir -p ./AppDir/bin
 cd ./PCExhumed
 make pcexhumed -j$(nproc)
-mv -v pcexhumed /usr/bin
-mkdir -p /usr/share/games/pcexhumed
-mv -v pcexhumed.pk3 /usr/share/games/pcexhumed
+mv -v pcexhumed pcexhumed.pk3 ../AppDir/bin
